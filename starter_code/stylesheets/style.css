@@ -50,6 +50,13 @@ body {
     width: 1rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-1 {
+        justify-content: space-between;
+        height: 4rem;       
+    }
+}
+
 /* header */
 
 .header-top {
@@ -111,7 +118,33 @@ header h1 {
     left: -6%;    
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header  {
+        flex-direction: row;
+    }
+
+    .header-top {
+        width: 205%;
+    }
+
+    header h1 {
+        font-size: 4.6rem;
+        text-align: left;
+    }
+    
+    .white-p {
+        font-size: 1.3rem;
+        width: 86%;
+        text-align: left;
+    }
+
+    .screenshot img {
+        margin-top: 55%;
+    }
+}
+
 /* main */
+/* section-1 */
 
 #section-1 {
     background-color: #F3EAE2;
@@ -130,6 +163,7 @@ header h1 {
     justify-content: space-around;
 }
 
+/* maybe there is a better way to do this */
 .image-1 {
     width:30%;
 }
@@ -157,6 +191,41 @@ header h1 {
     padding-top: 5%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .group-images {
+        flex-wrap: nowrap;
+    }
+
+    .image-1 {
+        width:15%;
+    }
+    
+    .image-2 {
+        width:8%;
+    }
+    
+    .image-3 {
+        width:10%;
+    }
+    
+    .image-4 {
+        width:6%;
+    }
+    
+    /* maybe these padding are not responsive. Is there a better way? */
+    .image-5 {
+        width:27%; 
+        padding-bottom: 5%;      
+    }
+    
+    .image-6 {
+        width:17%;  
+        padding-bottom: 5%;      
+    }
+}
+
+
+/* section-2 */
 
 #section-2 {
     background-color: white;
@@ -193,6 +262,21 @@ header h1 {
     margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #section-2 ul {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 0;
+
+    }
+    .percentage p {
+        width: 45%;
+        text-align: left;
+    }
+}
+
+/* section-3 */
+
 #section-3 {
     background-color:#540B51;
     text-align: center;
@@ -210,6 +294,17 @@ header h1 {
     background-color: #540B51;
     border: 2px solid white;
     color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #section-3 h3 {
+        font-size: 2.2rem
+        padding-left: 3%;;
+    }
+
+    #section-3 button {
+        width: 80%;
+    }
 }
 
 /* footer */
@@ -251,4 +346,23 @@ footer {
 
 small {
     font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* hr does not work here */
+    .vertical-ul {
+        flex-flow: row;
+        height: 2rem;
+        padding-left: 0;
+    }
+
+    footer {
+        height: 13rem;
+    }
+
+    .horizontal-ul {
+        font-size: 1rem;  
+        width: 33%;
+    }    
 }
