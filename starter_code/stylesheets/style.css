@@ -54,8 +54,43 @@ body {
     .nav-1 {
         justify-content: space-between;
         height: 4rem;       
-    }
+    }    
 }
+
+/* I AM HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .nav-1 {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-1 ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-1 a {
+        color: white;
+        text-decoration: none;
+    }
+    .menu-icon {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    
+}
+
 
 /* header */
 
@@ -73,6 +108,7 @@ header {
 .screenshot img {
     width: 156%;
     margin-top: 10%;
+    position: relative;
 }
 
 header h1 {    
@@ -142,6 +178,15 @@ header h1 {
         margin-top: 55%;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
+
 
 /* main */
 /* section-1 */
@@ -225,6 +270,15 @@ header h1 {
 }
 
 
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
+
+
 /* section-2 */
 
 #section-2 {
@@ -275,6 +329,16 @@ header h1 {
     }
 }
 
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
+
+
 /* section-3 */
 
 #section-3 {
@@ -306,6 +370,16 @@ header h1 {
         width: 80%;
     }
 }
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
+
 
 /* footer */
 
@@ -365,4 +439,13 @@ small {
         font-size: 1rem;  
         width: 33%;
     }    
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    
 }
